@@ -195,7 +195,12 @@ require('lazy').setup({
         gopls = {},
         pyright = {},
         rust_analyzer = {},
-        ts_ls = {},
+        marksman = {},
+        denols = {
+          settings = {
+            root_dir = require('lspconfig').util.root_pattern('deno.json', 'deno.jsonc'),
+          },
+        },
 
         lua_ls = {
           settings = {
